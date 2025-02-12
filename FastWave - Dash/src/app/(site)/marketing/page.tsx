@@ -1,4 +1,4 @@
-import { TopChannels } from "@/app/(site)/(home)/_components/top-channels";
+import { TopChannels } from "@/app/(site)/ecommerce/_components/top-channels";
 import { CostPerInteraction } from "@/components/Charts/basic/campaign-visitors/cost-per-interaction";
 import { CampaignVisitors } from "@/components/Charts/basic/campaign-visitors/last-campaign-performance";
 import DataStatsThree from "@/components/DataStats/DataStatsThree";

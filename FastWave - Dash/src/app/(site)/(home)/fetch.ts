@@ -1,141 +1,131 @@
-import * as logos from "@/assets/logos";
-
-export async function getOverviewData() {
-  // Fake delay
-  await new Promise((resolve) => setTimeout(resolve, 2000));
-
-  return {
-    views: {
-      value: 3456,
-      growthRate: 0.43,
-    },
-    profit: {
-      value: 4220,
-      growthRate: 4.35,
-    },
-    products: {
-      value: 3456,
-      growthRate: 2.59,
-    },
-    users: {
-      value: 3456,
-      growthRate: -0.95,
-    },
-  };
-}
-
-export async function getTopChannels() {
+export async function getLeadReportData() {
   // Fake delay
   await new Promise((resolve) => setTimeout(resolve, 1500));
 
   return [
     {
-      name: "Google",
-      visitors: 3456,
-      revenues: 4220,
-      sales: 3456,
-      conversion: 2.59,
-      logo: logos.google,
+      avatar: "/images/user/user-17.png",
+      name: "Charlie Donin",
+      email: "wdavis@aol.com",
+      project: {
+        startDate: "2024-12-25T18:00:00.000Z",
+        endDate: "2024-12-28T18:00:00.000Z",
+      },
+      duration: "3 days",
+      status: "lost lead",
     },
     {
-      name: "X.com",
-      visitors: 3456,
-      revenues: 4220,
-      sales: 3456,
-      conversion: 2.59,
-      logo: logos.x,
+      avatar: "/images/user/user-15.png",
+      name: "Makenna Carder",
+      email: "ltorres@aol.com",
+      project: {
+        startDate: "2024-12-25T18:00:00.000Z",
+        endDate: "2024-12-28T18:00:00.000Z",
+      },
+      duration: "3 days",
+      status: "active",
     },
     {
-      name: "Github",
-      visitors: 3456,
-      revenues: 4220,
-      sales: 3456,
-      conversion: 2.59,
-      logo: logos.github,
+      avatar: "/images/user/user-19.png",
+      name: "Talan Dokidis",
+      email: "rtaylor@aol.com",
+      project: {
+        startDate: "2024-12-25T18:00:00.000Z",
+        endDate: "2024-12-28T18:00:00.000Z",
+      },
+      duration: "3 days",
+      status: "active",
     },
     {
-      name: "Vimeo",
-      visitors: 3456,
-      revenues: 4220,
-      sales: 3456,
-      conversion: 2.59,
-      logo: logos.vimeo,
+      avatar: "/images/user/user-14.png",
+      name: "Cheyenne Levin",
+      email: "ebrown@aol.com",
+      project: {
+        startDate: "2024-12-25T18:00:00.000Z",
+        endDate: "2024-12-28T18:00:00.000Z",
+      },
+      duration: "3 days",
+      status: "active",
     },
     {
-      name: "Facebook",
-      visitors: 3456,
-      revenues: 4220,
-      sales: 3456,
-      conversion: 2.59,
-      logo: logos.facebook,
+      avatar: "/images/user/user-21.png",
+      name: "James Aminoff",
+      email: "slee@aol.com",
+      project: {
+        startDate: "2024-12-25T18:00:00.000Z",
+        endDate: "2024-12-28T18:00:00.000Z",
+      },
+      duration: "3 days",
+      status: "lost lead",
     },
   ];
 }
 
-export async function getChatsData() {
+export async function getTodoList() {
   // Fake delay
-  await new Promise((resolve) => setTimeout(resolve, 1000));
+  await new Promise((resolve) => setTimeout(resolve, 1500));
 
   return [
     {
-      name: "Jacob Jones",
-      profile: "/images/user/user-01.png",
-      isActive: true,
-      lastMessage: {
-        content: "See you tomorrow at the meeting!",
-        type: "text",
-        timestamp: "2024-12-19T14:30:00Z",
-        isRead: false,
+      logo: "/images/todo/uideck.svg",
+      title: "Next.js Uideck Yearly Meetings",
+      datetime: {
+        start: "2025-02-14T10:20:00.000Z",
+        end: "2025-02-14T15:00:00.000Z",
       },
-      unreadCount: 3,
+      status: "Completed",
     },
     {
-      name: "Wilium Smith",
-      profile: "/images/user/user-03.png",
-      isActive: true,
-      lastMessage: {
-        content: "Thanks for the update",
-        type: "text",
-        timestamp: "2024-12-19T10:15:00Z",
-        isRead: true,
+      logo: "/images/todo/dribble.svg",
+      title: "Next.js 2025 Dribbble Meet Up",
+      datetime: {
+        start: "2025-02-14T10:20:00.000Z",
+        end: "2025-02-14T15:00:00.000Z",
       },
-      unreadCount: 0,
+      status: "Upcoming",
     },
     {
-      name: "Johurul Haque",
-      profile: "/images/user/user-04.png",
-      isActive: false,
-      lastMessage: {
-        content: "What's up?",
-        type: "text",
-        timestamp: "2024-12-19T10:15:00Z",
-        isRead: true,
+      logo: "/images/todo/linkdin.svg",
+      title: "Next.js 2025 Linkedin Meet Up",
+      datetime: {
+        start: "2025-02-14T10:20:00.000Z",
+        end: "2025-02-14T15:00:00.000Z",
       },
-      unreadCount: 0,
-    },
-    {
-      name: "M. Chowdhury",
-      profile: "/images/user/user-05.png",
-      isActive: false,
-      lastMessage: {
-        content: "Where are you now?",
-        type: "text",
-        timestamp: "2024-12-19T10:15:00Z",
-        isRead: true,
-      },
-      unreadCount: 2,
-    },
-    {
-      name: "Akagami",
-      profile: "/images/user/user-07.png",
-      isActive: false,
-      lastMessage: {
-        content: "Hey, how are you?",
-        type: "text",
-        timestamp: "2024-12-19T10:15:00Z",
-        isRead: true,
-      },
-      unreadCount: 0,
+      status: "Canceled",
     },
   ];
+}
+
+export async function getCampaignsData() {
+  // Fake delay
+  await new Promise((resolve) => setTimeout(resolve, 1500));
+
+  return {
+    chart: [
+      {
+        name: "Series One",
+        data: [
+          { x: "M", y: 268 },
+          { x: "T", y: 385 },
+          { x: "W", y: 201 },
+          { x: "T", y: 298 },
+          { x: "F", y: 187 },
+          { x: "S", y: 195 },
+          { x: "S", y: 291 },
+        ],
+      },
+      {
+        name: "Series Two",
+        data: [
+          { x: "M", y: 345 },
+          { x: "T", y: 160 },
+          { x: "W", y: 291 },
+          { x: "T", y: 187 },
+          { x: "F", y: 195 },
+          { x: "S", y: 298 },
+          { x: "S", y: 201 },
+        ],
+      },
+    ],
+  };
 }
