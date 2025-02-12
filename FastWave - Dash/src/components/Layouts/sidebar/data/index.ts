@@ -57,14 +57,6 @@ export const NAV_DATA = [
             title: "Add Group",
             url: "/forms/pro-form-elements",
           },
-          {
-            title: "Add Group",
-            url: "/forms/form-layout",
-          },
-          {
-            title: "Add Member",
-            url: "/forms/pro-form-layout",
-          },
         ],
       },
       {
