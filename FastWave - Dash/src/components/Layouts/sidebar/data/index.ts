@@ -1,9 +1,10 @@
+import { title } from "process";
 import * as Icons from "../icons";
 import { UI_ELEMENTS } from "./ui-elements-list";
 
 export const NAV_DATA = [
   {
-    label: "MAIN MENU",
+    label: "Tools",
     items: [
       {
         title: "Dashboard",
@@ -14,20 +15,21 @@ export const NAV_DATA = [
             title: "FastWave DashBoard",
             url: "/",
           },
-        ],
+          {
+            title: "Calendar",
+            url: "/calendar", 
+            icon: Icons.Calendar,
+            items: [],
+          },
+          {
+            title: "Profile",
+            url: "/profile",
+            icon: Icons.User,
+            items: [],
+          },
+        ], 
       },
-      {
-        title: "Calendar",
-        url: "/calendar",
-        icon: Icons.Calendar,
-        items: [],
-      },
-      {
-        title: "Profile",
-        url: "/profile",
-        icon: Icons.User,
-        items: [],
-      },
+
       {
         title: "Tasks",
         icon: Icons.CheckList,
@@ -35,12 +37,12 @@ export const NAV_DATA = [
           {
             title: "List",
             url: "/tasks/task-list",
-            isPro: true,
+            
           },
           {
             title: "Kanban",
             url: "/tasks/task-kanban",
-            isPro: true,
+            
           },
         ],
       },
@@ -57,18 +59,17 @@ export const NAV_DATA = [
             url: "/forms/pro-form-elements",
           },
           {
-            title: "Form Layout",
+            title: "Add Group",
             url: "/forms/form-layout",
           },
           {
-            title: "Pro Form Layout",
+            title: "Add Member",
             url: "/forms/pro-form-layout",
-            isPro: true,
           },
         ],
       },
       {
-        title: "Tables",
+        title: "Event Entries",
         url: "/tables",
         icon: Icons.Table,
         items: [
@@ -77,19 +78,18 @@ export const NAV_DATA = [
             url: "/tables",
           },
           {
-            title: "Pro Tables",
+            title: "Swimmers Tables",
             url: "/tables/pro-tables",
-            isPro: true,
+           
           },
           {
-            title: "Data Tables",
+            title: "Events Table",
             url: "/pages/data-tables",
-            isPro: true,
           },
         ],
       },
       {
-        title: "Pages",
+        title: "My Club",
         icon: Icons.Alphabet,
         items: [
           {
@@ -97,65 +97,67 @@ export const NAV_DATA = [
             url: "/pages/settings",
           },
           {
-            title: "File Manager",
+            title: "Document Manager",
             url: "/pages/file-manager",
-            isPro: true,
+            
           },
-          {
-            title: "Pricing Tables",
-            url: "/pages/pricing-tables",
-            isPro: true,
-          },
+         
           {
             title: "Error Page",
             url: "/pages/error-page",
-            isPro: true,
+            
           },
           {
-            title: "Teams",
+            title: "Coaching Teams",
             url: "/pages/team",
-            isPro: true,
+            
           },
-          {
-            title: "Terms & Conditions",
-            url: "/pages/terms-conditions",
-            isPro: true,
-          },
-          {
-            title: "Mail Success",
-            url: "/pages/mail-success",
-            isPro: true,
-          },
+
         ],
       },
-    ],
-  },
-  {
-    label: "SUPPORT",
-    items: [
+
       {
-        title: "Messages",
-        icon: Icons.Chat,
-        badge: 9,
-        items: [],
-        isPro: true,
+        title: "Club Invoicing",
+        icon: Icons.PieChart,
+        items: [
+            {
+              title: "Set-Up Fees",
+              url: "/pages/pricing-tables",
+              
+            },
+            {
+              title: "Invoice",
+              url: "/invoice",
+            },
+        ],
       },
       {
-        title: "Inbox",
+
+        title: "Communications",
         icon: Icons.Inbox,
-        items: [],
-        isPro: true,
-      },
-      {
-        title: "Invoice",
-        icon: Icons.Printer,
-        items: [],
-        isPro: true,
+        items: [
+
+          {
+            title: "Inbox",
+            icon: Icons.Inbox,
+            url: "/message",
+            
+          },
+
+          {
+            title: "Messages",
+            icon: Icons.Chat,
+            url: "/inbox",
+            
+          },
+
+        ],
+
       },
     ],
-  },
+    },
   {
-    label: "OTHERS",
+    label: "Reporting Charts",
     items: [
       {
         title: "Charts",
@@ -168,7 +170,7 @@ export const NAV_DATA = [
           {
             title: "Advanced Chart",
             url: "/charts/advanced-chart",
-            isPro: true,
+            
           },
         ],
       },
@@ -178,7 +180,7 @@ export const NAV_DATA = [
         items: UI_ELEMENTS,
       },
       {
-        title: "Authentication",
+        title: "Authentication Tools",
         icon: Icons.Authentication,
         items: [
           {
@@ -188,28 +190,19 @@ export const NAV_DATA = [
           {
             title: "Sign Up",
             url: "/auth/sign-up",
-            isPro: true,
+            
           },
           {
             title: "Reset Password",
             url: "/auth/forgot-password",
-            isPro: true,
+           
           },
           {
-            title: "Coming Soon",
-            url: "/auth/coming-soon",
-            isPro: true,
-          },
-          {
-            title: "2 Step Verification",
+            title: "Set-up 2 Step Verification",
             url: "/auth/two-step-verification",
-            isPro: true,
+            
           },
-          {
-            title: "Under Maintenance",
-            url: "/auth/under-maintenance",
-            isPro: true,
-          },
+        
         ],
       },
     ],

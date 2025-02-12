@@ -1,41 +1,20 @@
-import { DownloadIcon, PdfIcon, PrintIcon } from "@/assets/icons";
+import { DownloadIcon, PdfIcon, PrintIcon, SendMessageIcon } from "@/assets/icons";
 import Link from "next/link";
 
 const productList = [
   {
-    brand: "Techno",
-    description: "Kemon 24 smart phone",
-    quantity: 1,
-    pricePerUnit: 200,
-    total: 200,
-  },
-  {
-    brand: "Vivo",
-    description: "Vivo 32 smart phone",
+    meetname: "Future Challengers",
+    events: "50 Free, 100 Back, 50 Fly",
     quantity: 3,
-    pricePerUnit: 300,
-    total: 900,
+    pricePerevent: 8,
+    total: 24,
   },
   {
-    brand: "Samsung",
-    description: "S23 Ultra",
-    quantity: 1,
-    pricePerUnit: 1300,
-    total: 1300,
-  },
-  {
-    brand: "Apple",
-    description: "iPhone 15Pro Max",
-    quantity: 2,
-    pricePerUnit: 1200,
-    total: 2400,
-  },
-  {
-    brand: "Oppo",
-    description: "Fold X",
-    quantity: 1,
-    pricePerUnit: 900,
-    total: 900,
+    meetname: "Aspiring Champs",
+    events: "50 Back, 100 Fly, 200 Free",
+    quantity: 3,
+    pricePerevent: 8,
+    total: 24,
   },
 ];
 
@@ -60,19 +39,19 @@ const InVoiceTwo = () => {
             Billing From:
           </p>
           <h4 className="mb-3 text-xl font-bold text-dark dark:text-white">
-            Super Technologies
+            Another Munster Swim Club
           </h4>
           <Link href="#" className="block">
             <span className="font-medium text-dark dark:text-white">
               Email:{" "}
             </span>
-            contact@example.com
+            treasurer@swimclub.com
           </Link>
           <span className="mt-1.5 block">
             <span className="font-medium text-dark dark:text-white">
               Address:{" "}
             </span>
-            2972 Westheimer Rd. Santa Ana.
+            72 Washington St. Cork.
           </span>
         </div>
 
@@ -81,19 +60,19 @@ const InVoiceTwo = () => {
             Billing To:
           </p>
           <h4 className="mb-3 text-xl font-bold text-dark dark:text-white">
-            Devid wilium
+            Swim Club Munster
           </h4>
           <Link href="#" className="block">
             <span className="font-medium text-dark dark:text-white">
               Email:{" "}
             </span>
-            contact@example.com
+            contact@swimclubmunster.com
           </Link>
           <span className="mt-1.5 block">
             <span className="font-medium text-dark dark:text-white">
               Address:{" "}
             </span>
-            New York, USA 2707 Davis Anenue
+             Old Birr Road, Nenagh
           </span>
         </div>
       </div>
@@ -124,7 +103,7 @@ const InVoiceTwo = () => {
           <h5 className="mb-1.5 font-bold text-dark dark:text-white">
             Due Amount :
           </h5>
-          <span className="text-body-sm font-medium"> $2,578.90 </span>
+          <span className="text-body-sm font-medium"> €48 </span>
         </div>
       </div>
 
@@ -135,16 +114,16 @@ const InVoiceTwo = () => {
             <thead className="border-b border-stroke dark:border-dark-3">
               <tr className="grid grid-cols-12 py-3.5 pl-5 pr-6">
                 <th className="col-span-3 text-left font-medium text-dark dark:text-white">
-                  Brand name
+                  Meet Name
                 </th>
                 <th className="col-span-4 text-left font-medium text-dark dark:text-white">
-                  Description
+                  Events
                 </th>
                 <th className="col-span-2 text-left font-medium text-dark dark:text-white">
                   Quantity
                 </th>
                 <th className="col-span-2 text-left font-medium text-dark dark:text-white">
-                  Price Per Unit
+                  Price Per Event
                 </th>
                 <th className="col-span-1 text-right font-medium text-dark dark:text-white">
                   Total
@@ -159,14 +138,14 @@ const InVoiceTwo = () => {
                   key={index}
                   className="grid grid-cols-12 border-b border-stroke py-3.5 pl-5 pr-6 dark:border-dark-3"
                 >
-                  <td className="col-span-3 font-medium">{item.brand}</td>
-                  <td className="col-span-4 font-medium">{item.description}</td>
+                  <td className="col-span-3 font-medium">{item.meetname}</td>
+                  <td className="col-span-4 font-medium">{item.events}</td>
                   <td className="col-span-2 font-medium">{item.quantity}</td>
                   <td className="col-span-2 font-medium">
-                    ${item.pricePerUnit}
+                    €{item.pricePerevent}
                   </td>
                   <td className="col-span-1 text-right font-medium">
-                    ${item.total}
+                    €{item.total}
                   </td>
                 </tr>
               ))}
@@ -180,27 +159,27 @@ const InVoiceTwo = () => {
             <div className="flex flex-col gap-4">
               <p className="flex justify-between font-medium text-dark dark:text-white">
                 <span>Subtotal</span>
-                <span>$4700</span>
+                <span>€48</span>
               </p>
 
               <p className="flex justify-between font-medium text-dark dark:text-white">
                 <span>Shipping Cost (+)</span>
-                <span>$10.00</span>
+                <span>€0.00</span>
               </p>
 
               <p className="flex justify-between font-medium text-dark dark:text-white">
                 <span>
-                  Coupon Discount
+                  Coupon Discount (if applicable)
                   <span className="text-green-light-1">(10%)</span>
                 </span>
-                <span>$470</span>
+                <span>€0</span>
               </p>
 
               <p className="flex justify-between font-medium text-dark dark:text-white">
                 <span>
-                  Vat <span className="text-[#FB5454]">(5%)</span>
+                  Vat (if appplicable) <span className="text-[#FB5454]">(5%)</span>
                 </span>
-                <span>$235</span>
+                <span>€0</span>
               </p>
             </div>
 
@@ -208,13 +187,20 @@ const InVoiceTwo = () => {
               <span className="font-medium text-dark dark:text-white">
                 Total
               </span>
-              <span className="font-bold text-green-light-1">$4475</span>
+              <span className="font-bold text-green-light-1">€48</span>
             </p>
 
-            <button className="float-right mt-10 inline-flex items-center gap-2.5 rounded-lg bg-primary px-7.5 py-2.5 font-medium text-white hover:bg-opacity-90">
+            <div className="mt-10 flex flex-col justify-end gap-4 sm:flex-row">    
+            <button className="flex items-center justify-center rounded-lg border border-primary px-7.5 py-2.5 text-center font-medium text-primary hover:bg-blue-light-5 dark:hover:border-primary dark:hover:bg-blue-light-3 dark:hover:text-primary">
               <DownloadIcon />
               Download
             </button>
+
+            <button className="flex items-center justify-center rounded-lg bg-primary px-7.5 py-2.5 text-center font-medium text-gray-2 hover:bg-opacity-90">
+              <SendMessageIcon/>
+                Send Invoice
+            </button>
+            </div>
           </div>
         </div>
         {/* <!-- total price end --> */}

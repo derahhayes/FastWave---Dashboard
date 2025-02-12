@@ -4,12 +4,12 @@ import Link from "next/link";
 const productList = [
   {
     link: "#",
-    image: "/images/product/product-thumb.png",
-    name: "Mist Black Triblend",
-    color: "White",
-    size: "Medium",
+    image: "/images/product/FastWave_logo.png",
+    name: "Term Fees ",
+    Term: "Winter",
+    swimmer: "John Doe",
     quantity: 1,
-    price: 120.0,
+    price: 100.0,
   },
 ];
 
@@ -21,34 +21,34 @@ export default function InvoiceOne() {
           <div>
             <p className="mb-1.5 font-medium text-dark dark:text-white">From</p>
             <h4 className="mb-4 text-[22px] font-medium leading-[30px] text-dark dark:text-white">
-              Roger Culhane
+              Munster Swimming Club 
             </h4>
             <Link href="#" className="block">
               <span className="font-medium">Email: </span>
-              contact@example.com
+              contact@swimmingclub.com
             </Link>
             <span className="mt-2 block">
-              <span className="font-medium">Address: </span> 2972 Westheimer Rd.
-              Santa Ana.
+              <span className="font-medium">Address: </span> 123 Newport Rd.
+              Tipperary.
             </span>
           </div>
           <div>
             <p className="mb-1.5 font-medium text-dark dark:text-white">To</p>
             <h4 className="mb-4 text-[22px] font-medium leading-[30px] text-dark dark:text-white">
-              Cristofer Levin
+              A Member
             </h4>
             <Link href="#" className="block">
               <span className="font-medium">Email: </span>
-              contact@example.com
+              contact@membersgmail.com
             </Link>
             <span className="mt-2 block">
-              <span className="font-medium">Address: </span> New York, USA 2707
+              <span className="font-medium">Address: </span> Clarina, 2707
               Davis Anenue
             </span>
           </div>
         </div>
         <h3 className="text-heading-6 font-medium text-dark dark:text-white">
-          Order #15478
+          Invoice Number #2376
         </h3>
       </div>
 
@@ -75,8 +75,8 @@ export default function InvoiceOne() {
                   {item.name}
                 </Link>
                 <p className="flex text-body-sm font-medium">
-                  <span className="mr-5"> Color: {item.color} </span>
-                  <span className="mr-5"> Size: {item.size} </span>
+                  <span className="mr-5"> Term: {item.Term} </span>
+                  <span className="mr-5"> Swimmer: {item.swimmer} </span>
                 </p>
               </div>
               <div className="flex items-center md:justify-end">
@@ -84,7 +84,7 @@ export default function InvoiceOne() {
                   Qty: {item.quantity}
                 </p>
                 <p className="mr-5 font-medium text-dark dark:text-white">
-                  ${item.price}
+                  {item.price}
                 </p>
               </div>
             </div>
@@ -99,8 +99,7 @@ export default function InvoiceOne() {
               Shipping Method
             </h4>
             <p className="font-medium">
-              FedEx - Take up to 3 <br />
-              working days.
+              Non-Ship Item
             </p>
           </div>
         </div>
@@ -110,7 +109,7 @@ export default function InvoiceOne() {
               Payment Method
             </h4>
             <p className="font-medium">
-              Apply Pay Mastercard <br />
+              BOI Global Payments Mastercard <br />
               **** **** **** 5874
             </p>
           </div>
@@ -120,15 +119,15 @@ export default function InvoiceOne() {
             <div className="ml-auto sm:w-1/2">
               <p className="mb-4 flex justify-between font-medium text-dark dark:text-white">
                 <span> Subtotal </span>
-                <span> $120.00 </span>
+                <span> €100.00 </span>
               </p>
               <p className="mb-4 flex justify-between font-medium text-dark dark:text-white">
                 <span> Shipping Cost (+) </span>
-                <span> $10.00 </span>
+                <span> €0.00 </span>
               </p>
               <p className="mb-4 mt-2 flex justify-between border-t border-stroke pt-6 font-medium text-dark dark:border-dark-3 dark:text-white">
                 <span> Total Payable </span>
-                <span> $130.00 </span>
+                <span> €100.00 </span>
               </p>
             </div>
 

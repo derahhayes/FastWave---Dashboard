@@ -16,7 +16,7 @@ export default function Page() {
         <div className="rounded-[10px] bg-white shadow-1 dark:bg-gray-dark dark:shadow-card">
           <div className="border-b border-stroke px-4 py-6 dark:border-dark-3 sm:px-6 xl:px-9">
             <h3 className="text-[22px] font-bold leading-7 text-dark dark:text-white">
-              Style 1
+              Terms Fees Invoice
             </h3>
           </div>
 
@@ -28,7 +28,7 @@ export default function Page() {
         <div className="rounded-[10px] bg-white shadow-1 dark:bg-gray-dark dark:shadow-card">
           <div className="border-b border-stroke px-4 py-6 dark:border-dark-3 sm:px-6 xl:px-9">
             <h3 className="text-[22px] font-bold leading-7 text-dark dark:text-white">
-              Style 2
+              Event Entry Invoice
             </h3>
           </div>
 
