@@ -4,7 +4,6 @@ import { UI_ELEMENTS } from "./ui-elements-list";
 
 export const NAV_DATA = [
   {
-    label: "Tools",
     items: [
       {
         title: "Dashboard",
@@ -154,30 +153,26 @@ export const NAV_DATA = [
         ],
 
       },
-    ],
-    },
-  {
-    label: "Reporting Charts",
-    items: [
       {
-        title: "Charts",
-        icon: Icons.PieChart,
+
+        title: "Support",
+        icon: Icons.ChevronUp,
         items: [
+
           {
-            title: "Basic Chart",
-            url: "/charts/basic-chart",
-          },
-          {
-            title: "Advanced Chart",
-            url: "/charts/advanced-chart",
+            title: "Video Help!",
+            url: "/videos",
             
           },
+
+          {
+            title: "Document Help",
+            url: "/",
+            
+          },
+
         ],
-      },
-      {
-        title: "UI Elements",
-        icon: Icons.FourCircle,
-        items: UI_ELEMENTS,
+
       },
       {
         title: "Authentication Tools",
@@ -206,5 +201,5 @@ export const NAV_DATA = [
         ],
       },
     ],
-  },
+    },
 ];

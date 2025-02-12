@@ -19,8 +19,8 @@ export function UserInfo() {
   const { data: session } = useSession();
 
   const USER = {
-    name: session?.user.name || "John Smith",
-    email: session?.user.email || "johnson@nextadmin.com",
+    name: session?.user.name || "Dermot Hayes",
+    email: session?.user.email || "dermot.hayes@derahsoftware.com",
     img: session?.user?.image || "/images/user/user-03.png",
   };
 
@@ -39,7 +39,7 @@ export function UserInfo() {
             height={200}
           />
           <figcaption className="flex items-center gap-1 font-medium text-dark dark:text-dark-6 max-[1024px]:sr-only">
-            <span>John Smith</span>
+            <span>Dermot Hayes</span>
 
             <ChevronUpIcon
               aria-hidden
