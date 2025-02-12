@@ -10,11 +10,11 @@ export async function TodoList() {
   const data = await getTodoList();
 
   return (
-    <div className="col-span-12 xl:col-span-7">
+    <div className="col-span-12">
       <div className="rounded-[10px] bg-white shadow-1 dark:bg-gray-dark dark:shadow-card">
         <div className="flex items-center justify-between border-b border-stroke px-4 py-4 dark:border-dark-3 md:px-6 md:py-6 xl:px-7.5">
           <h2 className="text-body-2xlg font-bold text-dark dark:text-white">
-            To Do List
+            Events
           </h2>
 
           <DropdownDefault />

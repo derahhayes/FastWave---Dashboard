@@ -44,12 +44,6 @@ const CalendarBox = () => {
                   <span className="group-hover:text-primary md:hidden">
                     More
                   </span>
-                  <div className="event invisible absolute left-2 z-99 mb-1 flex w-[200%] flex-col rounded-r-[5px] border-l-[3px] border-primary bg-gray-2 px-3 py-1 text-left opacity-0 group-hover:visible group-hover:opacity-100 dark:bg-dark-2 md:visible md:w-[190%] md:opacity-100">
-                    <span className="event-name font-medium text-dark dark:text-white">
-                      Redesign Website
-                    </span>
-                    <span className="time text-sm">1 Dec - 2 Dec</span>
-                  </div>
                 </div>
               </td>
               <td className="ease relative h-20 cursor-pointer border border-stroke p-2 transition duration-500 hover:bg-gray-2 dark:border-dark-3 dark:hover:bg-dark-2 md:h-25 md:p-6 xl:h-31">
@@ -123,6 +117,15 @@ const CalendarBox = () => {
                 <span className="font-medium text-dark dark:text-white">
                   17
                 </span>
+                <span className="group-hover:text-primary md:hidden">
+                    More
+                  </span>
+                  <div className="event invisible absolute left-2 z-99 mb-1 flex w-[200%] flex-col rounded-r-[5px] border-l-[3px] border-primary bg-gray-2 px-4 py-1 text-left opacity-0 group-hover:visible group-hover:opacity-100 dark:bg-dark-2 md:visible md:w-[190%] md:opacity-100">
+                    <span className="event-name font-medium text-dark dark:text-white">
+                      Gerry Ryan
+                    </span>
+                    <span className="time text-sm">4 Dec - 10 Dec</span>
+                  </div>
               </td>
               <td className="ease relative h-20 cursor-pointer border border-stroke p-2 transition duration-500 hover:bg-gray-2 dark:border-dark-3 dark:hover:bg-dark-2 md:h-25 md:p-6 xl:h-31">
                 <span className="font-medium text-dark dark:text-white">

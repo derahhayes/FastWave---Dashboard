@@ -45,17 +45,16 @@ export const NAV_DATA = [
         ],
       },
       {
-        title: "Forms",
+        title: "Manage Club",
         icon: Icons.Alphabet,
         items: [
           {
-            title: "Form Elements",
+            title: "Add Member",
             url: "/forms/form-elements",
           },
           {
-            title: "Pro Form Elements",
+            title: "Add Group",
             url: "/forms/pro-form-elements",
-            isPro: true,
           },
           {
             title: "Form Layout",

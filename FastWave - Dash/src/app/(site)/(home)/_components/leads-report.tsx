@@ -21,7 +21,7 @@ export async function LeadsReport() {
       <div className="rounded-[10px] bg-white shadow-1 dark:bg-gray-dark dark:shadow-card">
         <div className="flex items-start justify-between p-4 sm:p-6 xl:p-7.5">
           <h2 className="text-[22px] font-bold text-black dark:text-white">
-            Leads Report
+            My Swimmers
           </h2>
 
           <DropdownDefault />
@@ -32,8 +32,8 @@ export async function LeadsReport() {
             <TableRow className="text-base [&>th]:px-4 md:[&>th]:px-6 xl:[&>th]:px-7.5">
               <TableHead className="min-w-40">Name</TableHead>
               <TableHead>Email</TableHead>
-              <TableHead className="min-w-40">Project</TableHead>
-              <TableHead>Duration</TableHead>
+              <TableHead className="min-w-40">Swim Ireland ID</TableHead>
+              <TableHead>Group</TableHead>
               <TableHead>Status</TableHead>
               <TableHead>Actions</TableHead>
             </TableRow>
@@ -67,12 +67,9 @@ export async function LeadsReport() {
                   </a>
                 </TableCell>
 
-                <TableCell>
-                  {dayjs(item.project.startDate).format("DD MMM YYYY")} -{" "}
-                  {dayjs(item.project.endDate).format("DD MMM YYYY")}
-                </TableCell>
+                <TableCell> {item.swimirelandid} </TableCell>
 
-                <TableCell>{item.duration}</TableCell>
+                <TableCell>{item.group}</TableCell>
 
                 <TableCell>
                   <span
@@ -80,9 +77,9 @@ export async function LeadsReport() {
                       "inline-block truncate rounded px-2.5 py-1 text-sm font-medium capitalize",
                       {
                         "bg-[#FB5454]/[0.08] text-red":
-                          item.status === "lost lead",
+                          item.status === "Lost lead",
                         "bg-[#10B981]/[0.08] text-green":
-                          item.status === "active",
+                          item.status === "Active",
                       },
                     )}
                   >
