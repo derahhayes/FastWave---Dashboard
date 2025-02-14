@@ -2,6 +2,7 @@ import { title } from "process";
 import * as Icons from "../icons";
 import { UI_ELEMENTS } from "./ui-elements-list";
 
+
 export const NAV_DATA = [
   {
   
@@ -66,8 +67,8 @@ export const NAV_DATA = [
         icon: Icons.Table,
         items: [
           {
-            title: "Tables",
-            url: "/tables",
+            title: "Create Event",
+            url: "/forms/Add_event",
           },
           {
             title: "Swimmers Tables",

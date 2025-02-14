@@ -1,6 +1,6 @@
 import { createTimeFrameExtractor } from "@/utils/timeframe-extractor";
 import { EventList } from "./_components/event-list";
-import CalendarBox from "../../../components/CalenderBox";
+import CalendarBox from "./_components/CalenderBox ";
 import { Metadata } from "next";
 import { LeadsReport } from "./_components/leads-report";
 import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
@@ -29,7 +29,7 @@ export default async function CRMPage(props: PropsType) {
         </div>
       <div className="mb-8 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between"> 
         <h2 className="text-body-2xlg font-bold text-dark dark:text-white">
-          {"Munster Region Events Calendar"}
+          {"Events Calendar"}
         </h2>
       </div> 
       <CalendarBox/>
