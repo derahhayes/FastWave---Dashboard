@@ -16,7 +16,7 @@ model Account {
   id                String  @id @default(cuid())
   userId            String
   type              String
-  provider          String
+  provider          String 
   providerAccountId String
   refresh_token     String? @db.Text
   access_token      String? @db.Text
@@ -72,4 +72,16 @@ model VerificationToken {
   expires    DateTime
 
   @@unique([identifier, token])
+}
+
+model category {
+  id         String   @id @default(cuid())
+  category String
+  
+}
+
+model clubrole {
+  id         String   @id @default(cuid())
+  clubrole   String
+  
 }

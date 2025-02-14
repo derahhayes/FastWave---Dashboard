@@ -6,7 +6,7 @@ import Image from "next/image";
 import { getTodoList } from "../fetch";
 import { ClockIcon } from "./icons";
 
-export async function TodoList() {
+export async function EventList() {
   const data = await getTodoList();
 
   return (

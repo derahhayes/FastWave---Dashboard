@@ -4,6 +4,7 @@ import { UI_ELEMENTS } from "./ui-elements-list";
 
 export const NAV_DATA = [
   {
+  
     items: [
       {
         title: "Dashboard",
@@ -51,11 +52,11 @@ export const NAV_DATA = [
         items: [
           {
             title: "Add Member",
-            url: "/forms/form-elements",
+            url: "/forms/Add_member",
           },
           {
             title: "Add Group",
-            url: "/forms/pro-form-elements",
+            url: "/forms/Add_swimgroup",
           },
         ],
       },

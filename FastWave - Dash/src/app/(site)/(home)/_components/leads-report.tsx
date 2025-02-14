@@ -13,6 +13,7 @@ import dayjs from "dayjs";
 import Image from "next/image";
 import { getLeadReportData } from "../fetch";
 
+
 export async function LeadsReport() {
   const data = await getLeadReportData();
 
