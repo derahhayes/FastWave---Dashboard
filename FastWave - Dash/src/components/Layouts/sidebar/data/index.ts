@@ -128,7 +128,7 @@ export const NAV_DATA = [
           {
             title: "Inbox",
             icon: Icons.Inbox,
-            url: "/message",
+            url: "/messages",
             
           },
 

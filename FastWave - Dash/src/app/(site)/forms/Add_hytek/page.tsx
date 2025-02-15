@@ -1,7 +1,7 @@
 import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
 
 import { Metadata } from "next";
-import { CreateGroupForm } from "./_components/create_group";
+import { CreateGroupForm } from "./_components/create_hytek";
 
 export const metadata: Metadata = {
   title: "Create Meet Manager pack",
