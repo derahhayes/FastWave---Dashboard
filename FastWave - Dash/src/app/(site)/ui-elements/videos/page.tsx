@@ -15,9 +15,6 @@ export default function Page() {
 
       <div className="flex flex-col gap-7.5">
         <VideosItem aspectRatio="16:9" videoId={videoId} />
-        <VideosItem aspectRatio="4:3" videoId={videoId} />
-        <VideosItem aspectRatio="21:9" videoId={videoId} />
-        <VideosItem aspectRatio="1:1" videoId={videoId} />
       </div>
     </>
   );

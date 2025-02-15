@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  const videoId = "NpdQkEPELh4";
+  const videoId = "3VoYZMk-TxQ";
 
   return (
     <>

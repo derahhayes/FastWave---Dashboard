@@ -8,7 +8,7 @@ type VideosItemProps = {
 
 const VideosItem = ({ aspectRatio, videoId }: VideosItemProps) => {
   return (
-    <ShowcaseSection title={`Responsive Aspect Ratio ${aspectRatio}`}>
+    <ShowcaseSection title={`FastWave Introduction`}>
       <iframe
         className={cn("w-full", {
           "aspect-square": aspectRatio === "1:1",

@@ -1,5 +1,5 @@
 import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
-
+import MembersTable from "@/app/(site)/(home)/_components/swimmer_table"
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { ProTableStyle1 } from "./_components/style-1";
@@ -15,11 +15,11 @@ export default async function Page() {
     <>
       <Breadcrumb pageName="Event Entry" />
 
-      <div className="grid gap-10">
+      
+      <div>
         <Suspense fallback={<ProTableStyle1Skeleton />}>
-          <ProTableStyle1 />
+          <ProTableStyle1 /> 
         </Suspense>
-
       </div>
     </>
   );
