@@ -5,9 +5,11 @@ import { UI_ELEMENTS } from "./ui-elements-list";
 
 export const NAV_DATA = [
   {
-  
+    label: "Main Dashboard",
+
     items: [
       {
+        
         title: "Dashboard",
         icon: Icons.HomeIcon,
         items: [
@@ -32,16 +34,12 @@ export const NAV_DATA = [
       },
 
       {
-        title: "Tasks",
+        title: "My Gala",
         icon: Icons.CheckList,
         items: [
+        
           {
-            title: "List",
-            url: "/tasks/task-list",
-            
-          },
-          {
-            title: "Kanban",
+            title: "Gala Tasks",
             url: "/tasks/task-kanban",
             
           },
@@ -71,13 +69,10 @@ export const NAV_DATA = [
             url: "/forms/Add_event",
           },
           {
-            title: "Swimmers Tables",
+            title: "Enter Events",
             url: "/tables/pro-tables",
+            isPro: false,
            
-          },
-          {
-            title: "Events Table",
-            url: "/pages/data-tables",
           },
         ],
       },

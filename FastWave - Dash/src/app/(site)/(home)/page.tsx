@@ -2,8 +2,6 @@ import { createTimeFrameExtractor } from "@/utils/timeframe-extractor";
 import { EventList } from "./_components/event-list";
 import CalendarBox from "./_components/CalenderBox ";
 import { Metadata } from "next";
-import { LeadsReport } from "./_components/leads-report";
-import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
 import MembersTable from "./_components/swimmer_table";
 
 export const metadata: Metadata = {

@@ -5,21 +5,21 @@ import { structuredAlgoliaHtmlData } from "@/libs/crawlIndex";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Task Kanban Page",
+  title: "My Gala Tasks",
 };
 
 export default async function Page() {
   await structuredAlgoliaHtmlData({
     pageUrl: `${process.env.SITE_URL}tasks/task-kanban`,
     htmlString: "",
-    title: "Next.js Task Kanban Page",
+    title: "FastWave Task Management Page",
     type: "page",
     imageURL: "",
   });
 
   return (
     <div className="mx-auto max-w-5xl">
-      <Breadcrumb pageName="Task Kanban" />
+      <Breadcrumb pageName="My Gala Task Management" />
 
       <TaskHeader />
       <TaskKanban />

@@ -23,31 +23,31 @@ const lanes: TaskLanes[] = [
     title: "To Do's",
     tasks: [
       {
-        title: "Task title",
+        title: "Gerry Ryan Gala",
         taskItems: [
           {
-            name: "Here is task one",
+            name: "Get Backcrawl ledges",
             completed: false,
           },
           {
-            name: "Here is task Two",
+            name: "Send out Gala Pack",
             completed: true,
           },
           {
-            name: "Here is task Three",
+            name: "Organise Pool rental",
             completed: false,
           },
         ],
       },
       {
-        title: "Task title",
+        title: "John Dempsey",
         taskItems: [
           {
-            name: "Here is task one",
+            name: "Sort Medical Staff",
             completed: false,
           },
           {
-            name: "Here is task Two",
+            name: "Order tee-shirts",
             completed: true,
           },
         ],

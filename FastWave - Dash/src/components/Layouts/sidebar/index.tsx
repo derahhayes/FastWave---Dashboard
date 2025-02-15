@@ -157,7 +157,7 @@ export function Sidebar() {
                                 as="link"
                                 href={href}
                                 isActive={pathname === href}
-                                isPro={"isPro" in item && item.isPro}
+                                
                               >
                                 <item.icon
                                   className="size-6 shrink-0"
@@ -166,11 +166,7 @@ export function Sidebar() {
 
                                 <span>{item.title}</span>
 
-                                {"badge" in item && (
-                                  <div className="ml-auto mr-10 flex size-[19px] items-center justify-center rounded-full bg-red-light-5 text-[10px] font-medium text-red">
-                                    {item.badge}
-                                  </div>
-                                )}
+                        
                               </MenuItem>
                             );
                           })()

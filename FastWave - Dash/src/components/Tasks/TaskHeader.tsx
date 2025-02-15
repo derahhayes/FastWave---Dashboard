@@ -18,7 +18,7 @@ const TaskHeader = () => {
   return (
     <div className="flex flex-col gap-y-4 rounded-[10px] bg-white p-2.5 shadow-1 dark:bg-gray-dark dark:shadow-card sm:flex-row sm:items-center sm:justify-between">
       <h2 className="pl-2.5 text-heading-5 font-bold leading-[34px] text-dark dark:text-white">
-        Tasks
+        My Gala Tasks
       </h2>
 
       <div className="flex flex-col gap-4 2xsm:flex-row 2xsm:items-center">

@@ -4,7 +4,7 @@ import { ShowcaseSection } from "@/components/Layouts/showcase-section";
 
 export function CreateGroupForm() {
   return (
-    <ShowcaseSection title="New Member Form" className="!p-6.5">
+    <ShowcaseSection title="Create New Group Form" className="!p-6.5">
       <form action="#">
         <InputGroup
           label="Group Name"
