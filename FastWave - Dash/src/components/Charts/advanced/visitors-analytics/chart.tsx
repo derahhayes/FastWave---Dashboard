@@ -74,7 +74,7 @@ export function VisitorsAnalyticsChart({ data }: PropsType) {
         options={options}
         series={[
           {
-            name: "Visitors",
+            name: "Swimmers",
             data,
           },
         ]}

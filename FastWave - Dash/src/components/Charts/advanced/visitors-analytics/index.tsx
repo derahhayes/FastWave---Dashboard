@@ -16,7 +16,7 @@ export async function VisitorsAnalytics({ className }: PropsType) {
       )}
     >
       <h2 className="text-2xl font-bold text-dark dark:text-white">
-        Visitors Analytics
+        Gala Analytics
       </h2>
 
       <VisitorsAnalyticsChart data={data} />

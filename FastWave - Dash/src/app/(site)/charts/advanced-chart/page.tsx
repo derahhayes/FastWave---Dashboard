@@ -7,7 +7,7 @@ import { createTimeFrameExtractor } from "@/utils/timeframe-extractor";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Advanced Chart",
+  title: "Coaching Reports",
 };
 
 type PropsType = {

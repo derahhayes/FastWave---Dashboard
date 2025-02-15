@@ -91,13 +91,13 @@ export const NAV_DATA = [
           },
          
           {
-            title: "Error Page",
-            url: "/pages/error-page",
+            title: "Coaching Reports",
+            url: "/charts/advanced-chart",
             
           },
           {
-            title: "Coaching Teams",
-            url: "/pages/team",
+            title: "Create Gala Pack",
+            url: "/forms/Add_hytek",
             
           },
 
