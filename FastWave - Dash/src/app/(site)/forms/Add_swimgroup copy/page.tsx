@@ -4,13 +4,13 @@ import { Metadata } from "next";
 import { CreateGroupForm } from "./_components/create_group";
 
 export const metadata: Metadata = {
-  title: "Create Swimming Group",
+  title: "Create Meet Manager pack",
 };
 
 export default function Page() {
   return (
     <>
-      <Breadcrumb pageName="Add Group" />
+      <Breadcrumb pageName="Filename" />
 
       <div className="grid grid-cols-1">
         <div className="flex flex-col gap-9">

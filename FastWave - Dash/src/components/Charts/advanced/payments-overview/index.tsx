@@ -27,7 +27,7 @@ export async function PaymentsOverview({
           Swimmer Overview
         </h2>
 
-        <PeriodPicker defaultValue={timeFrame} sectionKey="payments_overview" />
+        <PeriodPicker defaultValue={timeFrame} sectionKey="swimmer_overview" />
       </div>
 
       <PaymentsOverviewChart data={data} />
